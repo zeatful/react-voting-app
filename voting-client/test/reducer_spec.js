@@ -76,7 +76,7 @@ describe('reducer', () => {
         const action = { type: 'VOTE', entry: 'Trainspotting' };
         const nextState = reducer(state, action);
 
-        expect(nextState).to.equal.apply(fromJS({
+        expect(nextState).to.equal(fromJS({
             vote: {
                 pair: ['Trainspotting', '28 Days Later'],
                 tally: { Trainspotting: 1 }

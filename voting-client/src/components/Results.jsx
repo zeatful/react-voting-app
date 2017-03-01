@@ -1,8 +1,9 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import { connect } from 'react-redux';
 import Winner from './Winner';
 
-export default React.createClass({
+export const Results = React.createClass({
     mixins: [PureRenderMixin],
     getPair: function () {
         return this.props.pair || [];
